@@ -363,6 +363,7 @@ class vis_tool:
         elif cfg.dataset_type == 'CocoDataset':
             self.data_info = COCO_dataset(cfg, self.args)
 
+        self.data_info = COCO_dataset(cfg, self.args)
         self.info.set('DATASET: {}'.format(self.data_info.dataset))
 
         # load image and show it on the window
